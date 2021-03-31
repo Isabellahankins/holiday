@@ -1,0 +1,29 @@
+/* site.css
+    Isabella Hankins
+    03/30/2021
+    site style definiton page*/
+
+body { 
+    height: 100%;
+	display: grid;
+	grid-template-areas:
+		'head head head head head head head head head head '
+		'head head head head head head head head head head '
+        'cont cont cont cont cont cont cont cont cont cont '
+		'cont cont cont cont cont cont cont cont cont cont '
+		'cont cont cont cont cont cont cont cont cont cont '
+		'cont cont cont cont cont cont cont cont cont cont '
+		'cont cont cont cont cont cont cont cont cont cont '
+		'cont cont cont cont cont cont cont cont cont cont '
+		'cont cont cont cont cont cont cont cont cont cont '
+		'cont cont cont cont cont cont cont cont cont cont ';
+
+}
+.head{ 
+    grid-area: head;
+    display: block;
+}
+.content{ 
+	/*margin-bottom: auto;*/
+	grid-area: cont;
+}

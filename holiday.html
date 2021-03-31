@@ -1,0 +1,69 @@
+<!-- holiday.html
+    Isabella Hankins
+	03/30/2021
+	
+	Assement-->
+	
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <title>Graduation Countdown</title>
+        <link rel="stylesheet" href="site.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            p {
+              text-align: center;
+              font-size: 50px;
+              margin-top: 0px;
+            }
+        </style>
+	</head>
+    
+    <body>
+
+        <!--HEADER-->
+          <div class="head">
+           <h1>Graduation Countdown</h1>
+         </div>
+
+        <p id="demo"></p>
+
+        <!--CONTENT-->
+         <div class="content">
+         </div>
+         
+        <p id="demo">
+        <script>
+            // Set the countdown date 
+            var countDownDate = new Date("May 27, 2021 00:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // today's date and time
+              var now = new Date().getTime();
+                
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+                
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              // Output the result in an element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+              // If the count down is over, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "YOU HAVE MADE IT! CONGRATS!";
+              }
+            }, 1000);
+            </script>
+	</body>
+
+</html>
