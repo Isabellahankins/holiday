@@ -1,7 +1,6 @@
 <!-- holiday.html
     Isabella Hankins
 	03/30/2021
-	
 	Assement-->
 	
 <!DOCTYPE html>
@@ -15,31 +14,33 @@
             p {
               text-align: center;
               font-size: 50px;
-              margin-top: 0px;
+              margin: right 50px;
+              margin-left: auto;
             }
         </style>
 	</head>
-    
+ 
     <body>
-
+      
         <!--HEADER-->
           <div class="head">
-           <h1>Graduation Countdown</h1>
-         </div>
 
-        <p id="demo"></p>
+           <h1>Graduation Countdown</h1>
+
+         </div>
 
         <!--CONTENT-->
          <div class="content">
-         </div>
-         
-        <p id="demo">
-        <script>
-            // Set the countdown date 
-            var countDownDate = new Date("May 27, 2021 00:00:00").getTime();
+
+          <p id="demo"></p>
+
+            <script>
+
+              // Set the countdown date 
+              var countDownDate = new Date("May 27, 2021 00:00:00").getTime();
             
-            // Update the count down every 1 second
-            var x = setInterval(function() {
+              // Update the count down every 1 second
+              var x = setInterval(function() {
             
               // today's date and time
               var now = new Date().getTime();
@@ -62,8 +63,10 @@
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "YOU HAVE MADE IT! CONGRATS!";
               }
-            }, 1000);
-            </script>
-	</body>
+              }, 1000);
+          </script>
 
+          <h1>Time Until Graduation <br>Class of 20201</h1>
+        </div>
+	</body>
 </html>

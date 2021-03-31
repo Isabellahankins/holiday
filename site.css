@@ -4,6 +4,7 @@
     site style definiton page*/
 
 body { 
+    background-image: url('shutterstock_Graduation.original.jpg');
     height: 100%;
 	display: grid;
 	grid-template-areas:
@@ -23,7 +24,14 @@ body {
     grid-area: head;
     display: block;
 }
+
+h1{
+    text-shadow: 2px 2px black;
+    color: rgba(228, 188, 13, 0.904);
+    text-align: center;
+}
 .content{ 
 	/*margin-bottom: auto;*/
 	grid-area: cont;
+    
 }
